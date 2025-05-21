@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function TaskInput(props) {
+export default function TaskInput({items, setItems}) {
 
   const handleSubmit = (e) => {
     //evita que el form se actualice
@@ -14,10 +14,6 @@ export default function TaskInput(props) {
       text: formdata.get('item-input')
 
     }
-    //toma los promps que se envian de la app 
-    const items= props.items //lista actual de tareas
-    const setItems = props.setItems //funcion para actualizar lista
-    
     //copia todas los elementos existentes incluyendo la nueva lista
     setItems([...items, newTask])
     //limpia el formulario

@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage":"https://ginorojo.github.io/G2-2025-REACT/practica-1/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
